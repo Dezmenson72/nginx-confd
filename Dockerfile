@@ -1,8 +1,5 @@
-FROM nginx:1.9
-
-MAINTAINER Alexander Lukichev
-
-ADD https://github.com/kelseyhightower/confd/releases/download/v0.10.0/confd-0.10.0-linux-amd64 /bin/confd
+FROM nginx:1.25
+ADD https://github.com/kelseyhightower/confd/releases/download/v0.16.0/confd-0.16.0-linux-amd64 /bin/confd
 RUN chmod +x /bin/confd
 
 COPY confd /etc/confd
