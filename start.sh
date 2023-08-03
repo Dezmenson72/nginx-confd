@@ -2,7 +2,7 @@
 
 set -eo pipefail
 
-etcd=${ETCD:-172.17.42.1:4001}
+etcd=${ETCD:-192.168.31.125:2379}
 
 echo "[nginx-confd] etcd=$etcd"
 
